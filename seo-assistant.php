@@ -5,7 +5,7 @@
  * Plugin Name:       Seo Assistant
  * Plugin URI:        https://github.com/cs_army/seo-assistant
  * Description:       Add tracking and verification script on your WordPress site with ease. Place your ids and content tags in *Easy Tags and Tracking Id Inserter* to get verified.
- * Version:           1.0.1
+ * Version:           1.0.
  * Author:            cs_army
  * Author URI:        https://cs_army.com
  * License:           GPL-2.0+
@@ -24,7 +24,7 @@ if ( ! defined( 'WPINC' ) ) {
  * Start at version 1.0.0 and use SemVer - https://semver.org
  * Rename this for your plugin and update it as you release new versions.
  */
-define( 'SEO_ASSISTANT', '1.0.1' );
+define( 'SEO_ASSISTANT', '1.0' );
 
 define('SEO_ASSISTANT_NAME', 'Seo Assistant');
 
