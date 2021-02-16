@@ -103,10 +103,8 @@ class Seo_Assistant_Admin {
 		 * class.
 		 */
 
-		wp_register_script('seo-assistant-editor', '//cdnjs.cloudflare.com/ajax/libs/ace/1.2.3/ace.js', array('jquery'),$this->version);
-		wp_enqueue_script('seo-assistant-editor');
-
-		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/seo-assistant-admin.js', array( 'jquery', 'seo-assistant-editor' ), $this->version,true );
+		
+		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/seo-assistant-admin.js', array( 'jquery' ), $this->version,true );
 
 	}
 
