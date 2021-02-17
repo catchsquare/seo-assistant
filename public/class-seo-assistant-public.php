@@ -125,7 +125,7 @@ class Seo_Assistant_Pubilc {
 			printf(
 				'<!--  Added by Seo Assistant plugin -->
 			<meta name="google-site-verification" content="%s" />',
-				$google_webmaster_code
+				esc_attr($google_webmaster_code)
 			);
 		}
 	}
@@ -145,7 +145,7 @@ class Seo_Assistant_Pubilc {
 				gtag("js", new Date());
 				gtag("config", "%1$s");
 				</script>%2$s',
-				$google_analytics_id,
+				esc_attr($google_analytics_id),
 				" \r\n "
 			);
 		}
@@ -165,7 +165,7 @@ class Seo_Assistant_Pubilc {
 				'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 				})(window,document,'script','dataLayer','%s');</script>
 				 \r\n<!-- End Google Tag Manager  Added by Seo Assistant plugin --> \r\n",
-				$google_tag_manager_id
+				esc_attr($google_tag_manager_id)
 			);
 		}
 	}

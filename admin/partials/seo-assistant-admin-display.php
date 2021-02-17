@@ -15,9 +15,9 @@
 
 <!-- This file should primarily consist of HTML with a little bit of PHP. -->
 
-<?php $current_screen = isset($_GET['tab']) ? $_GET['tab'] : ''; ?>
+<?php $current_screen = isset( $_GET['tab'] ) ? esc_attr($_GET['tab'] ) : ''; ?>
 <div class="wrap">
-    <h1>Easy Tag And Tracking Id Insert Settings</h1>
+    <h1>SEO Assistant Settings</h1>
     <?php do_action('seo_assistant_settings_tabs', $current_screen); ?>
     <form method="post" action="options.php">
         <?php
